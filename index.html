@@ -1,16 +1,206 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clear AI – Smart Skin Insights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fefefe;
+      color: #1a1a1a;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0984e3;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #0984e3;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 20px 50px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #0984e3;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    /* FEATURE BOXES */
+    .features {
+      background-color: #f4f7fb;
+      padding: 70px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+      width: 260px;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .feature-box h4 {
+      color: #0984e3;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      color: #444;
+      font-size: 0.96rem;
+      line-height: 1.5;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    footer a {
+      color: #0984e3;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .feature-box {
+        width: 90%;
+      }
+
+      .nav {
+        gap: 20px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
 
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">Clear AI</div>
+      <ul class="nav">
+        <li><a href="mailto:team@clear-ai.app">Contact</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>AI Face Scans That Actually Help</h2>
+    <p>Scan your face in seconds and get real, customized insights to improve your skin — no fluff, just what matters.</p>
+  </section>
+
+  <!-- FEATURE BOXES -->
+  <section class="features">
+    <div class="feature-box">
+      <h4>Smart Face Scanning</h4>
+      <p>Analyze your brightness, clarity, and more in seconds.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Personalized Tasks</h4>
+      <p>Get daily custom tasks that actually help you improve your skin.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Progress Tracker</h4>
+      <p>See your scan history and how your skin changes over time.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Streak System</h4>
+      <p>Stay consistent and motivated with streak tracking.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Contact us: <a href="mailto:team@clear-ai.app">team@clear-ai.app</a></p>
+    <p>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Service</a> |
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </p>
+  </footer>
+
+</body>
 </html>
